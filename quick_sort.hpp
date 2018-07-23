@@ -13,7 +13,7 @@ void quick_sort_(Arr& arr,int begin,int end)
         {
             while(left_iter<right_iter)
             {
-                if(arr[right_iter]<=compare_base){
+                if(arr[right_iter]<compare_base){
                     arr[left_iter] = arr[right_iter];
                     break;
                 }
@@ -21,7 +21,7 @@ void quick_sort_(Arr& arr,int begin,int end)
             }
             while(left_iter<right_iter)
             {
-                if(arr[left_iter]>=compare_base){
+                if(arr[left_iter]>compare_base){
                     arr[right_iter] = arr[left_iter];
                     break;
                 }
